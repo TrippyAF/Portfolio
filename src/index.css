@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@keyframes lightsaber {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.lightsaber-bar {
+  background: linear-gradient(
+    90deg,
+    #84cc16,
+    #a3e635,
+    #d9f99d,
+    #a3e635,
+    #84cc16
+  );
+  background-size: 200% auto;
+  animation: lightsaber 2s linear infinite;
+  box-shadow: 0 0 15px #84cc16, 0 0 30px #a3e635;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+  
